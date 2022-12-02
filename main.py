@@ -25,7 +25,18 @@ def initialWait(update):
       pygame.display.update()
       time.sleep(3)
 
+def checkQuit():
+  for eve in pygame.event.get():
+        if eve.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
 
+def delay():
+  if every_word[update][-1] == ".":
+      pygame.time.delay(200)
+  else:
+    pygame.time.delay(110)
+  
 running = True
 
 while running:
@@ -39,17 +50,10 @@ while running:
 
     win.blit(currentWord, text_rect)
 
-    for eve in pygame.event.get():
-        if eve.type == pygame.QUIT:
-            pygame.quit()
-            sys.exit()
-
+    checkQuit()
 
     pygame.display.update()
 
-    if every_word[update][-1] == ".":
-      pygame.time.delay(200)
-    else:
-      pygame.time.delay(110)
+    delay()      
 
     update += 1

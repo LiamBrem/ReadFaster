@@ -28,7 +28,6 @@ When Mr and Mrs Dursley woke up on the dull, grey Tuesday
 our story starts, there was nothing about the cloudy sky outside to
 suggest that strange and mysterious things would soon be happening all over the country. Mr Dursley hummed as he picked out
 his most boring tie for work and Mrs Dursley gossiped away 
-8 HARRY POTTER
 happily as she wrestled a screaming Dudley into his high chair.
 None of them noticed a large tawny owl flutter past the window.
 At half past eight, Mr Dursley picked up his briefcase, pecked
@@ -107,7 +106,6 @@ worried that he walked straight into someone just outside the door.
 fell. It was a few seconds before Mr Dursley realised that the man
 was wearing a violet cloak. He didn’t seem at all upset at being
 almost knocked to the ground. On the contrary, his face split into 
-10 HARRY POTTER
 a wide smile and he said in a squeaky voice that made passers-by
 stare: ‘Don’t be sorry, my dear sir, for nothing could upset me
 today! Rejoice, for You-Know-Who has gone at last! Even
@@ -145,4 +143,8 @@ owls tonight, Jim?
 """
 
 def returnText():
+  text = input("paste text: ")
+
+  #return text
+  
   return TEXT
