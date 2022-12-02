@@ -28,21 +28,23 @@ HEIGHT = 500
 win = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Words")
 
+def initialWait(update):
+  if update == 0:
+      win.blit(currentWord, text_rect)
+      pygame.display.update()
+      time.sleep(3)
+
 
 running = True
 
 while running:
     
-
     win.fill((0, 0, 0))
 
     currentWord = font.render(every_word[update], True, white)
     text_rect = currentWord.get_rect(center=(WIDTH/2, HEIGHT/2))
 
-    if update == 0:
-      win.blit(currentWord, text_rect)
-      pygame.display.update()
-      time.sleep(3)
+    initialWait(update)
 
     win.blit(currentWord, text_rect)
 
@@ -60,4 +62,5 @@ while running:
       pygame.time.delay(110)
 
     update += 1
+
 
